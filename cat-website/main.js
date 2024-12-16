@@ -1,15 +1,10 @@
 import './style.css'
-import { setupCounter } from './counter.js'
+import { setUploadButton } from './upload'
 
 document.querySelector('#app').innerHTML = `
   <div>
 
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-
-  <div class="card">
+  <div>
     <input type="file" id="imageUpload" accept="image/*">
     <button id="uploadButton">Upload</button>
   </div>
@@ -21,5 +16,4 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
 setUploadButton(document.querySelector('#uploadButton'))
